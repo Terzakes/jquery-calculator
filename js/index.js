@@ -4,7 +4,6 @@ $(function() {
   var $equal = $('#equals');
   var $clear = $('#clear');
   var $operator = $('.operator');
-  var val1;
   var total = 0;
 
   $btns.click(function(event) {
