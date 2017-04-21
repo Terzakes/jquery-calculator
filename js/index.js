@@ -35,7 +35,7 @@ $(function() {
     for (let i = 0; i < values.length; i++) {
       switch (values[i]) {
         case '+':
-          newValss = values.split('+');
+          newVals = values.split('+');
           total = Number(newVals[0]) + Number(newVals[1]);
           break;
         case '-':
@@ -53,7 +53,9 @@ $(function() {
       }
     }
     console.log(total);
-    if (Number.isInteger(Number(total))) {
+    if (Number(total)) {
+      $screen.text(total);
+    } else if (Number(total) === 0){
       $screen.text(total);
     } else {
       $screen.text('ERROR');
