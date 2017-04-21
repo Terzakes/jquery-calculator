@@ -27,7 +27,7 @@ $(function() {
     var values = $screen.text().slice(0, -1);
     $screen.text('');
     var newVals = []
-    
+
     if (!Number.isInteger(Number(values[values.length - 1]))) {
       $screen.text('ERROR');
       return;
@@ -53,8 +53,8 @@ $(function() {
           break;
       }
     }
-
-    if (Number.parseInt(total)) {
+    console.log(total);
+    if (Number.isInteger(Number(total))) {
       $screen.text(total);
     } else {
       $screen.text('ERROR');
