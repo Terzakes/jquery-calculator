@@ -52,7 +52,6 @@ $(function() {
           break;
       }
     }
-    console.log(total);
     if (Number(total)) {
       $screen.text(total);
     } else if (Number(total) === 0){
