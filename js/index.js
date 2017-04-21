@@ -61,5 +61,8 @@ $(function() {
     }
   }
 
+  $('input[type="text"]').keypress(function() {
+  console.log('A key was pressed and inserted into a focusable control.');
+});
 
 });
