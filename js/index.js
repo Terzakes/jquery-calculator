@@ -5,6 +5,7 @@ $(function() {
   var $clear = $('#clear');
   var $operator = $('.operator');
   var total = 0;
+  var $input = $('input')
 
   $btns.click(function(event) {
     if ($screen.text() === 'ERROR') {
@@ -25,7 +26,7 @@ $(function() {
   function calculate() {
     var values = $screen.text().slice(0, -1);
     $screen.text('');
-    var newVals = []
+    var newVals = [];
 
     if (!Number.isInteger(Number(values[values.length - 1]))) {
       $screen.text('ERROR');
@@ -61,8 +62,5 @@ $(function() {
     }
   }
 
-  $('input[type="text"]').keypress(function() {
-  console.log('A key was pressed and inserted into a focusable control.');
-});
 
 });
